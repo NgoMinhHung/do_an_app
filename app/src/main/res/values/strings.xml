@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Life</string>
+    <string name="edit_text_name_hint">Tên</string>
+    <string name="edit_text_email_hint">Email</string>
+    <string name="edit_text_password_hint">Mật khẩu</string>
+    <string name="edit_text_password_confirm_hint">Xác nhận mật khẩu</string>
+    <string name="button_create_account">Tạo tài khoản mới</string>
+    <string name="button_sign_in">Đăng nhập</string>
+    <string name="text_view_login">Đã có tài khoản? Đăng nhập</string>
+    <string name="text_view_create_account">Tạo tài khoản mới</string>
+    <string name="title">Tiêu đề</string>
+    <string name="title_log_out">Đăng xuất</string>
+    <string name="log_out_message">Bạn có muốn đăng xuất không?</string>
+    <string name="description">Mô tả</string>
+    <string name="signing_in_message">Vui lòng đợi giây lát…</string>
+    <string name="sign_up_message">Vui lòng đợi giây lát…</string>
+    <string name="sign_in_success_message">Đăng nhập thành công</string>
+    <string name="created_account_success_message">Tạo tài khoản thành công</string>
+    <string name="log_out">Đăng xuất</string>
+    <string name="profile">Thông tin cá nhân</string>
+    <string name="log_out_success_message">Đăng xuất thành công</string>
+    <string name="text_view_name">Tên của bạn</string>
+    <string name="text_view_gender">Giới tính</string>
+    <string name="text_view_phone">Số điện thoại</string>
+    <string name="text_view_address">Địa chỉ</string>
+    <string name="button_edit_profile">Chỉnh sửa thông tin cá nhân</string>
+    <string name="loading">Vui lòng đợi giây lát…</string>
+    <string name="load_user_failed">Có lỗi khi lấy thông tin tài khoản</string>
+    <string name="edit_text_name">Tên</string>
+    <string name="edit_text_gender">Giới tính</string>
+    <string name="edit_text_phone">Số điện thoại</string>
+    <string name="edit_text_address">Địa chỉ</string>
+    <string name="male">Nam</string>
+    <string name="female">Nữ</string>
+    <string name="load_user_profile_failed_message">Có lỗi khi lấy thông tin tài khoản</string>
+    <string name="menu_item_edit_profile">Chỉnh sửa thông tin cá nhân</string>
+    <string name="button_cancel">Hủy</string>
+    <string name="button_OK">Xác nhận</string>
+    <string name="update_profile_failed">Có lỗi khi cập nhật thông tin cá nhân</string>
+    <string name="app_bar_home">Trang chủ</string>
+    <string name="app_bar_statistics">Thống kê</string>
+    <string name="app_bar_setting">Cài đặt</string>
+    <string name="ATM_discard">ATM</string>
+    <string name="button_add">Thêm</string>
+    <string name="total">Tổng</string>
+    <string name="in_debt">Nợ</string>
+    <string name="spend">Chi tiêu</string>
+    <string name="label_total">Tổng số dư</string>
+    <string name="label_atm">Thẻ ATM</string>
+    <string name="label_cash">Tiền mặt</string>
+    <string name="lable_outcome">Chi tiêu</string>
+    <string name="label_income_in_week">Chi tiêu trong tuần</string>
+    <string name="label_source">Nguồn tiền</string>
+    <string name="cancel">Huỷ</string>
+    <string name="ok">Xác nhận</string>
+    <string name="amount">Số tiền</string>
+    <string name="note">Ghi chú</string>
+    <string name="time">Thời gian</string>
+    <string name="add_category">Thêm danh mục</string>
+    <string name="limited_outcome_per_week">Giới hạn chi tiêu trong tuần</string>
+    <string name="limited_outcome_per_month">Giới hạn chi tiêu trong tháng</string>
+    <string name="button_save_config">Lưu cài đặt</string>
+
+    <string-array name="types">
+        <item>Theo tuần</item>
+        <item>Theo tháng</item>
+    </string-array>
+</resources>

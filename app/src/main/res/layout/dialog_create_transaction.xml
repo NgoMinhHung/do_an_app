@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="14dp"
+        android:text="@string/label_atm"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/large_text_size" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="14dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="5dp">
+
+        <com.minhhung.life_app.widgets.HasTextChangedActionEditText
+            android:id="@+id/tvAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/amount"
+            android:inputType="numberDecimal"
+            android:textSize="@dimen/normal_text_size" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="14dp"
+        android:paddingTop="5dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="5dp">
+
+        <com.minhhung.life_app.widgets.HasTextChangedActionEditText
+            android:id="@+id/tvNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/note"
+            android:textSize="@dimen/normal_text_size" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="5dp" />
+
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        android:id="@+id/tvCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:hint="@string/add_category"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:textSize="@dimen/normal_text_size" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:text="@string/time"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/small_text_size" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:drawableStart="@drawable/ic_date"
+            android:drawablePadding="8dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="14dp"
+            android:layout_weight="1"
+            android:background="?attr/selectableItemBackground"
+            android:drawableStart="@drawable/ic_time"
+            android:drawablePadding="8dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSource"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:text="@string/label_source"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/small_text_size" />
+
+    <RadioGroup
+        android:id="@+id/sourceGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/optionAtm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="@string/label_atm" />
+
+        <RadioButton
+            android:id="@+id/optionCash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_cash" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnCancel"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:text="@string/cancel" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnOk"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:text="@string/ok" />
+
+    </LinearLayout>
+
+</LinearLayout>
